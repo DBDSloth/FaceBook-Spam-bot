@@ -916,7 +916,7 @@ WScript.Sleep 1000
 WshShell.SendKeys "I, the script, have logged you as a test subject. Thank you for your involuntary participation!"
 WshShell.SendKeys "{ENTER}"
 WScript.Sleep 1000
-WshShell.SendKeys "Test of: FaceBook Message Spam Bot Test v2.01 Complete, you have been trolled, come at me bro. By: Austen Lage"
+WshShell.SendKeys "FaceBook Message Spam Bot Test v2.01 Complete, you have been trolled, come at me bro."
 WshShell.Sendkeys "{ENTER}"
 WScript.Sleep 1000
 WshShell.SendKeys "Want to keep up on the developement of this project? Check out my GitHub... https://github.com/Vort3chs/  - Austen Lage"
