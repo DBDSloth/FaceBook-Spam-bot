@@ -18,7 +18,7 @@ WshShell.SendKeys "Preparing FaceBook spambot v2.01......"
 WshShell.SendKeys "{ENTER}"
 WScript.Sleep 35
 'Countdown phase
-WshShell.Sendkeys "You have exactly 30 seconds before you receive 867 messages, each message is separated from the other by 85ms. Bot created by: Vort3chs"
+WshShell.Sendkeys "You have exactly 30 seconds before you receive 287 messages, each message is separated from the other by 85ms. Bot created by: Vort3chs"
 WshShell.SendKeys "{ENTER}"
 WScript.Sleep 15000
 Wshshell.Sendkeys "15 seconds remaining..."
@@ -916,9 +916,9 @@ WScript.Sleep 85
 WshShell.SendKeys "I, the script, have logged you as a test subject. Thank you for your involuntary participation!"
 WshShell.SendKeys "{ENTER}"
 WScript.Sleep 1000
-WshShell.SendKeys "Test of: FaceBook Message Spam Bot Test v2.0 Complete, you have been trolled, come at me bro. By: Austen Lage"
+WshShell.SendKeys "Test of: FaceBook Message Spam Bot Test v2.01 Complete, you have been trolled, come at me bro. By: Austen Lage"
 WshShell.Sendkeys "{ENTER}"
 msgbox("Spamming complete!")
 msgbox(myvar)
-msgbox("Was sent 867 messages, each within 85 milliseconds of eachother...")
+msgbox("Was sent 287 messages, each within 85 milliseconds of eachother...")
 msgbox("Created by Vort3chs.")
