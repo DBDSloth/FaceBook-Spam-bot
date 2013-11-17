@@ -8,7 +8,6 @@ msgbox("The following statement will be used by the spam bot.")
 msgbox(myvarX)
 msgbox(myvar)
 WScript.Sleep 15
-WshShell.SendKeys "{ENTER}"
 msgbox("Will be spammed.")
 msgbox("**READ ALL BEFORE HITTING OK** 1. Please open FaceBook.com and open up the chat window of the user that is being spammed, click within the text input portion at the bottom of the chat window. 2. Now click ok. 3. 10 seconds will pass and the script will start. 4. Sit back and enjoy...")
 'Start up phase
