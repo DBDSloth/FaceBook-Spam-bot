@@ -1,6 +1,8 @@
 Dim myvar, myvarX, myvarY
 myvar = 1
 Set WshShell = WScript.CreateObject("WScript.Shell")
+myvarY=inputbox("What browser do you use? Google chrome, Internet Explorer, or Firefox? For google Chrome please put Chrome.exe in the input box. If you use Internet Explorer type iexplore.exe if you use Firefox you are out of luck for now.")
+WshShell.Run myvarY
 myvar=inputbox("Please insert the name of the user being spammed.")
 msgbox("User identified!")
 myvarX=inputbox("Input what you would like the bot to repeat.")
