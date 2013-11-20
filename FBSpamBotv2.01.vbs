@@ -6,11 +6,9 @@ WshShell.Run myvarY
 myvar=inputbox("Please insert the name of the user being spammed.")
 msgbox("User identified!")
 myvarX=inputbox("Input what you would like the bot to repeat.")
-msgbox("The following statement will be used by the spam bot.")
-msgbox(myvarX)
-msgbox(myvar)
+msgbox("The following statement will be used by the spam bot." & myvarX)
+msgbox("The user being spammed is" & mvar)
 WScript.Sleep 15
-msgbox("Will be spammed.")
 msgbox("**READ ALL BEFORE HITTING OK** 1. Please open FaceBook.com and open up the chat window of the user that is being spammed, click within the text input portion at the bottom of the chat window. 2. Now click ok. 3. 10 seconds will pass and the script will start. 4. Sit back and enjoy...")
 'Start up phase
 WScript.Sleep 10000
@@ -923,6 +921,5 @@ WScript.Sleep 1000
 WshShell.SendKeys "Want to keep up on the developement of this project? Check out my GitHub... https://github.com/Vort3chs/  - Austen Lage"
 WshShell.Sendkeys "{ENTER}"
 msgbox("Spamming complete!")
-msgbox(myvar)
-msgbox("Was sent 287 messages, each within 85 milliseconds of eachother...")
+msgbox(myvar & "Was sent 287 messages, each within 85 milliseconds of eachother...")
 msgbox("Created by Vort3chs.")
