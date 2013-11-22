@@ -52,7 +52,7 @@ WshShell.SendKeys "{ENTER}"
 WScript.Sleep 1000
 outFile=myvarC
 Set objFile = objFSO.CreateTextFile(outFile,True)
-objFile.Write {ENTER} & "You spammed " & myvar & " with " & myvarA & " messages."
+objFile.Write "You spammed " & myvar & " with " & myvarA & " messages."
 objFile.Close
 WshShell.SendKeys "I, the script, have logged you as a test subject. Thank you for your involuntary participation!"
 WshShell.SendKeys "{ENTER}"
