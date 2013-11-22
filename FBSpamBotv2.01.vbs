@@ -7,15 +7,15 @@ msgbox("User identified!")
 myvarX=inputbox("Input what you would like the bot to repeat.")
 myvarA=inputbox("How many messages would you like the bot to send?")
 msgbox("The following statement will be used by the spam bot: " & myvarX & "The message will be sent " & myvarA & " times.")
-msgbox("The user being spammed is " & mvar & ".")
+msgbox("The user being spammed is " & myvar & ".")
 WScript.Sleep 10000
 'Warning phase
 WshShell.SendKeys "Preparing FaceBook spambot v2.03......"
 WshShell.SendKeys "{ENTER}"
 WScript.Sleep 35
-'Countdown phase
-WshShell.Sendkeys "You have exactly 30 seconds before you receive 287 messages, each message is separated from the other by 85ms. Bot created by: Vort3chs"
+WshShell.Sendkeys "You have exactly 30 seconds before you receive " & myvarA & " messages, each message is separated from the other by 85ms. Bot created by: Vort3chs"
 WshShell.SendKeys "{ENTER}"
+'Countdown phase
 WScript.Sleep 15000
 Wshshell.Sendkeys "15 seconds remaining..."
 WshShell.SendKeys "{ENTER}"
@@ -45,13 +45,13 @@ WshShell.SendKeys "{ENTER}"
 WScript.Sleep 85
 Next
 'Closing phase
-WshShell.SendKeys "Your name is"
+WshShell.SendKeys "Your name is" & myvar & "."
 WshShell.SendKeys "{ENTER}"
 WScript.Sleep 1000
 WshShell.SendKeys "I, the script, have logged you as a test subject. Thank you for your involuntary participation!"
 WshShell.SendKeys "{ENTER}"
 WScript.Sleep 1000
-WshShell.SendKeys "FaceBook Message Spam Bot Test v2.01 Complete, you have been trolled, come at me bro."
+WshShell.SendKeys "FaceBook Message Spam Bot Test v2.03 Complete, you have been trolled, come at me bro."
 WshShell.Sendkeys "{ENTER}"
 WScript.Sleep 1000
 WshShell.SendKeys "Want to keep up on the developement of this project? Check out my GitHub... https://github.com/Vort3chs/  - Austen Lage"
