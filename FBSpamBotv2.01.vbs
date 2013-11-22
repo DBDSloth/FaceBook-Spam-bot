@@ -1,6 +1,6 @@
 Dim myvar, myvarX, myvarY, myvarA, myvarB, myvarC, Response
-Do Until Response=vbNo
-Response=msgbox("Are you sure you would like to run the spam bot?"),vbYesNo
+Do Until Response = vbNo
+Response = MsgBox("Are you sure you would like to run the spam bot?"), vbYesNo
 Set WshShell = WScript.CreateObject("WScript.Shell")
 Set objFSO=CreateObject("Scripting.FileSystemObject")
 myvarC=inputbox("Please input the file path to save the log file to. *REQUIRED* ex. c:\Users\Austen\Desktop\log.txt you must create the text file firt, auto creation will be added in the future.")
@@ -67,5 +67,4 @@ WshShell.Sendkeys "{ENTER}"
 msgbox("Spamming complete!")
 msgbox(myvar & " was sent " & myvarA & " messages, each within 85 milliseconds of eachother...")
 msgbox("Created by Vort3chs.")
-Response=msgbox("Would you like to run the spam bot again?"),vbYesNo
 Loop
