@@ -1,4 +1,4 @@
-Dim myvar, myvarX, myvarY, myvarA, myvarB, myvarC, currentversion, currentversionv
+Dim myvar, myvarX, myvarY, myvarA, myvarB, myvarC, myvarD, currentversion, currentversionv
 currentversionv="v"
 currentversion=currentversionv & "2.04"
 
@@ -13,6 +13,7 @@ Set objFSO=CreateObject("Scripting.FileSystemObject")
     msgbox("User identified!")
   myvarX=inputbox("Input what you would like the bot to repeat.")
   myvarA=inputbox("How many messages would you like the bot to send?")
+  myvarD=inputbox("How much time would you like between each message? (In milliseconds)")
     msgbox("The following statement will be used by the spam bot: " & myvarX & ", the message will be sent " & myvarA & " times.")
     msgbox("The user being spammed is " & myvar & ".")
 
@@ -21,7 +22,7 @@ Set objFSO=CreateObject("Scripting.FileSystemObject")
     WshShell.SendKeys "Preparing FaceBook spambot " & currentversion & "......"
     WshShell.SendKeys "{ENTER}"
   WScript.Sleep 35
-    WshShell.Sendkeys "You have exactly 30 seconds before you receive " & myvarA & " messages, each message is separated from the other by 85ms. Bot created by: Vort3chs"
+    WshShell.Sendkeys "You have exactly 30 seconds before you receive " & myvarA & " messages, each message is separated from the other by" & myvarD & " ms . Bot created by: Vort3chs"
     WshShell.SendKeys "{ENTER}"
   
 'Countdown phase
@@ -52,7 +53,7 @@ Set objFSO=CreateObject("Scripting.FileSystemObject")
   For myvarB = 1 to myvarA
     WshShell.SendKeys myvarX
     WshShell.SendKeys "{ENTER}"
-    WScript.Sleep 85
+    WScript.Sleep myvarD
   Next
 
 'Logging phase
@@ -76,5 +77,5 @@ Set objFSO=CreateObject("Scripting.FileSystemObject")
   
 'Spamming completion conformation phase. (I added this to inform you that the script has finished its job.)
   msgbox("Spamming complete!")
-  msgbox(myvar & " was sent " & myvarA & " messages, each within 85 milliseconds of eachother...")
-  msgbox("Created by Vort3chs." & Chr(13) & Chr(10) & currentversion)
+  msgbox(myvar & " was sent " & myvarA & " messages, each within " & myvarD & " milliseconds of eachother...")
+  msgbox("Created by Vort3chs." & Chr(13) & Chr(13) & currentversion)
