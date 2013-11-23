@@ -62,7 +62,7 @@ Set objFSO=CreateObject("Scripting.FileSystemObject")
   WScript.Sleep 1000
     outFile=myvarC
     Set objFile = objFSO.CreateTextFile(outFile,True)
-    objFile.Write "You spammed " & myvar & " with " & myvarA & " messages."
+    objFile.Write "You spammed " & myvar & " with " & myvarA & " messages. The message he/she was spammed with was: " & myvarX & ". The time taken between each message was " & myvarD & "ms."
     objFile.Close
   WshShell.SendKeys "I, the script, have logged you as a test subject. Thank you for your involuntary participation!"
   WshShell.SendKeys "{ENTER}"
