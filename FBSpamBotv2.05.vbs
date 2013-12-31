@@ -1,6 +1,6 @@
 Dim myvar, myvarX, myvarY, myvarA, myvarB, myvarC, myvarD, currentversion, currentversionv
 currentversionv="v"
-currentversion=currentversionv & "2.04"
+currentversion=currentversionv & "1.0"
 
 Set WshShell = WScript.CreateObject("WScript.Shell")
 Set objFSO=CreateObject("Scripting.FileSystemObject")
