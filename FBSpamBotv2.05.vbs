@@ -5,6 +5,9 @@ currentversion=currentversionv & "2.04"
 Set WshShell = WScript.CreateObject("WScript.Shell")
 Set objFSO=CreateObject("Scripting.FileSystemObject")
 
+'Run Conformation Phase
+  WshShell.Run "FBSB_A_Y_S.vbs"
+
 'Config phase
   myvarC=inputbox("Please input the file path to save the log file to. *REQUIRED* ex. c:\Users\Austen\Desktop\log.txt you must create the text file firt, auto creation will be added in the future.")
   myvarY=inputbox("What browser do you use? Google chrome, Internet Explorer, or Firefox? For google Chrome please put Chrome.exe in the input box. If you use Internet Explorer type iexplore.exe if you use Firefox you are out of luck for now.")
