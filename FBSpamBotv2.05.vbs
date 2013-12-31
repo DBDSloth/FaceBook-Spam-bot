@@ -6,7 +6,15 @@ Set WshShell = WScript.CreateObject("WScript.Shell")
 Set objFSO=CreateObject("Scripting.FileSystemObject")
 
 'Run Conformation Phase
-  WshShell.Run "FBSB_A_Y_S.vbs"
+  intAnswer = _
+      Msgbox("Are you sure you would like to run FaceBook spambot " & currentversion & "?", _
+          vbYesNo)
+
+  If intAnswer = vbYes Then
+      Msgbox("The spam bot will continue."),vbOkOnly
+  Else
+      WScript.quit
+  End If
 
 'Config phase
   myvarC=inputbox("Please input the file path to save the log file to. *REQUIRED* ex. c:\Users\Austen\Desktop\log.txt you must create the text file firt, auto creation will be added in the future.")
