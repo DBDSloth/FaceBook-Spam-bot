@@ -90,3 +90,5 @@ Set objFSO=CreateObject("Scripting.FileSystemObject")
   msgbox("Spamming complete!")
   msgbox(myvar & " was sent " & myvarA & " messages, each within " & myvarD & " milliseconds of eachother...")
   msgbox("Created by Vort3chs." & Chr(13) & Chr(13) & currentversion)
+  
+'HUNTER HELPED!
